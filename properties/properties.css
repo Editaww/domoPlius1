@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Libre Baskerville", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+}
+.page-wrapper {
+  background-color: rgb(177, 205, 195);
+}
+header {
+  background-color: rgb(85, 189, 154);
+  width: 100%;
+  height: 150px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 300px;
+  height: 120px;
+}
+
+.add-link {
+  padding: 0.8rem;
+  width: 300px;
+  margin-top: 4rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(62, 131, 108);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+  font-size: larger;
+  text-align: center;
+  display: inline-block;
+}
+.add-link:hover {
+  background-color: rgb(7, 55, 36);
+  transition: 1s;
+}
+.burger-btn {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: none;
+  margin-top: 3rem;
+}
+.mobile-btn {
+  display: none;
+}
+
+.heading {
+  width: 100%;
+  height: 3rem;
+  padding: 2rem;
+  padding-left: 0px;
+  background-color: rgb(62, 131, 108);
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.heading button {
+  padding: 0.8rem;
+  width: 150px;
+  background-color: rgb(62, 131, 108);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.heading button:hover {
+  background-color: rgb(7, 55, 36);
+  transition: 1s;
+}
+.mobile-add-link {
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: larger;
+  display: none;
+}
+.mobile-add-link:hover {
+  background-color: rgb(7, 55, 36);
+  padding: 0.8rem;
+  width: 200px;
+  transition: 1s;
+}
+
+.property-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  h1 {
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.card {
+  width: 346px;
+  height: 400px;
+  background-color: rgb(246, 244, 241);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  align-items: center;
+  cursor: pointer;
+}
+.property-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: rgb(62, 131, 108);
+  width: 100%;
+  height: 150px;
+  padding-left: 1rem;
+
+  display: flex;
+  align-items: center;
+}
+.contacts-wrapper {
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+address {
+  font-size: 13px;
+  padding-bottom: 1rem;
+
+  a {
+    color: white;
+  }
+}
+.links-wrapper {
+  display: flex;
+  align-items: end;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+.links-wrapper ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+  .logo {
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+  }
+  .add-link {
+    display: none;
+  }
+  .burger-btn {
+    display: inline-block;
+  }
+  .mobile-btn {
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 210px;
+    background-color: rgb(62, 131, 108);
+    display: inline-block;
+    right: -1000px;
+    transition: 0.3s;
+
+    button {
+      padding: 0.8rem;
+      width: 110px;
+      background-color: rgb(62, 131, 108);
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .mobile-btn button:hover {
+    background-color: rgb(7, 55, 36);
+    transition: 1s;
+  }
+
+  .active {
+    left: 0px;
+  }
+  .heading {
+    justify-content: center;
+
+    button {
+      display: none;
+    }
+    .mobile-add-link {
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  .property-card {
+    padding-top: 3rem;
+  }
+}

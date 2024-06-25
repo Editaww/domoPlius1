@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DomoPlius</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="properties.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <img class="logo" src="../img/Logo.png" alt="Logo" />
+        <a href="../add/add.html" class="add-link">Add new advert</a>
+        <img
+          id="burger-btn"
+          class="burger-btn"
+          src="../img/burger-btn.svg"
+          alt=""
+        />
+
+        <div id="mobile-btn" class="mobile-btn">
+          <button class="filter-btn" data-type="all">All ads</button>
+          <button class="filter-btn" data-type="Apartments">Apartments</button>
+          <button class="filter-btn" data-type="Home">House</button>
+          <button class="filter-btn" data-type="Homesteads">Homesteads</button>
+        </div>
+      </header>
+
+      <div id="heading" class="heading">
+        <button class="filter-btn" data-type="all">All ads</button>
+        <button class="filter-btn" data-type="Apartments">Apartments</button>
+        <button class="filter-btn" data-type="Home">House</button>
+        <button class="filter-btn" data-type="Homesteads">Homesteads</button>
+        <a href="../add/add.html" class="mobile-add-link">Add new advert</a>
+      </div>
+      <main>
+        <div id="property-card" class="property-card"></div>
+      </main>
+      <footer>
+        <div class="contacts-wrapper">
+          <h1>Contacts:</h1>
+          <address>
+            UAB " DomoPlius "<br />
+            Vilniaus g. 1<br />
+            Vilnius, LT-01101<br />
+            Lithuania<br />
+            Phone : +370 600 00000<br />
+            Email:
+            <a href="mailto:domoplius@example.com">domoplius@example.com</a>
+          </address>
+          <nav class="links-wrapper">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/"
+                  ><img src="../img/facebook.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"
+                  ><img src="../img/instagram.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/"
+                  ><img src="../img/twitter-X.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="properties.js"></script>
+  </body>
+</html>
